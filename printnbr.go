@@ -5,7 +5,6 @@ import (
 )
 
 func check(r int) {
-
 	c := '0'
 	if r == 0 {
 		z01.PrintRune(c)
@@ -22,7 +21,6 @@ func check(r int) {
 	}
 	z01.PrintRune(c)
 	return
-
 }
 
 func PrintNbr(n int) {
