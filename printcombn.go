@@ -1,6 +1,5 @@
 package piscine
 
-//https://github.com/Yerkin/piscine-go/blob/master/printcombn.go
 import "github.com/01-edu/z01"
 
 func che(v int) {
@@ -34,6 +33,7 @@ func my_check(p int) bool {
 	}
 	return true
 }
+
 func check_ok(p int) bool {
 	if p < 9 {
 		return true
@@ -48,12 +48,12 @@ func check_ok(p int) bool {
 			}
 			p /= 10
 		}
-
 		return false
 	} else {
 		return true
 	}
 }
+
 func PrintCombN(n int) {
 	mx_ln := 1
 	for i := 2; i <= n; i++ {
