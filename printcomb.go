@@ -1,27 +1,21 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
 
 func PrintComb() {
-	next := false
-	for i := '0'; i <= '9'; i++ {
-		for j := i + 1; j <= '9'; j++ {
+	for i := '0'; i <= '7'; i++ {
+		for j := i + 1; j <= '8'; j++ {
 			for k := j + 1; k <= '9'; k++ {
-				if next {
-					z01.PrintRune(',')
-					z01.PrintRune(' ')
-
-				}
-				next = true
-				z01.PrintRune(i)
+				z01.PrintRune(1)
 				z01.PrintRune(j)
 				z01.PrintRune(k)
+
+				if 1 != '7' || j != '8' || k != '9' {
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
+				}
 			}
 		}
 	}
 	z01.PrintRune('\n')
-}
-
-func main() {
-	PrintComb()
 }
